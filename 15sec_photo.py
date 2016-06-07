@@ -11,13 +11,11 @@ import facebook
 def post_to_fb():
   # Fill in the values noted in previous steps here
   cfg = {
-    "page_id"      : "1353901551306151",  # Step 1
-    "access_token" : "EAATPXcUGxacBAAf4AF994p3oeRvisafKhQ2fruQobBf7vIo19ntcymVZAiR7y5zmVYqZCqQi2c9H1v2orzfVHSdFlTQrJ9TdPOP6liVtp1FWohkZCIU8h1PGUsI4f64lv0U2xNfrKBoX61YxUMQTmuvu3q3godvAoL0ersffAZDZD"   # Step 3
+    "page_id"      : "",  # Step 1
+    "access_token" : ""   # Step 3
     }
      
   api = get_api(cfg)
-  #msg = "Hello, world!"
-  #status = api.put_wall_post(msg)
   with open("final.jpg") as image:
       api.put_photo(image)
 
@@ -62,14 +60,6 @@ def face_selection(img):
 
 
 def show_portrait(img):
-    #cv2.putText(img = img,
-    #            text = '10s',
-    #            org = (100, 100),
-    #            fontFace = cv2.FONT_HERSHEY_DUPLEX,
-    #            fontScale = 6,
-    #            color = (255,255,255),
-    #            thickness = 5,
-    #            lineType = cv2.CV_AA)
     cv2.namedWindow("portrait", cv2.WND_PROP_FULLSCREEN)
     cv2.setWindowProperty("portrait", cv2.WND_PROP_FULLSCREEN, cv2.cv.CV_WINDOW_FULLSCREEN)
     cv2.imshow("portrait", img)
