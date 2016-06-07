@@ -1,3 +1,5 @@
+<h1>15 seconds of fame </h1>
+
 This is Raspberry Pi reimplementation of 15 seconds of fame project by Franc Solina. (http://eprints.fri.uni-lj.si/129/1/solina_leonardo_04.pdf)
 15seconds of fame is an interactive installation that every 15 seconds generates a new pop-art portrait of a randomly selected viewer. The installation
 was inspired by Andy Warhol’s ironical statement that “in the future everybody will be famous for 15 minutes.” The installation
@@ -7,3 +9,15 @@ intervals on the flat-panel computer monitor, which is framed as a painting.
 
 The reimplementation of the project was part of my final project at subject Interactivity and Information design on master study of CS
 FRI UL. 
+
+<h2>Requirements<h2>
+- RaspberryPi supported camera
+- RaspberryPi Model 2b+ 
+- Raspbian Jessie OS - https://www.raspberrypi.org/downloads/raspbian/
+- Python 2.7 (Preinstalled on Raspbian Jessie)
+- OpenCV - http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
+
+<h2>Usage<h2>
+- Copy both 15sec_photo.py and 15sec_view.py in same directory on RaspberryPi.
+- Run 15sec_photo.py and wait till it find first face and generate out.jpg.
+- Run 15sec_view.py to start showing taken photos. 
